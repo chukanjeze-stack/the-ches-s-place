@@ -12,8 +12,19 @@
         <nav class="navbar">
 
     <div class="logo">
-        The Chef's Place
+
+    <img src="images/Homeland logo.jpeg" alt="HomeLand Kitchen Africa">
+
+    <div class="brand-text">
+        <h2>HomeLand Kitchen</h2>
+        <span>Africa</span>
     </div>
+
+</div>
+
+<div class="cart-icon" onclick="toggleCart(); document.getElementById('cart-count').innerText = cart.length; renderCart">
+    🛒 <span id="cart-count">0</span>
+</div>
 
     <div class="menu-toggle">
         ☰
@@ -35,16 +46,106 @@
     </header>
 
     <section class="hero">
-        <h1>Delicious Meals Delivered To Your Doorstep</h1>
+
+    <div class="hero-content">
+
+        <h1>
+            Welcome to HomeLand Kitchen Africa
+        </h1>
 
         <p>
-            Order your favourite meals quickly and track your rider in real time.
+            Bringing authentic African flavours to your doorstep.
+            Order meals, track riders in real time and earn cashback rewards.
         </p>
 
-        <button>Order Now</button>
-    </section>
+        <div class="hero-buttons">
 
-    <section class="popular-dishes">
+            <button>
+                Order Now
+            </button>
+
+            <button class="secondary-btn">
+                View Menu
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Today's Specials -->
+<section class="specials" id="specials">
+
+    <h2>🔥 Today's Specials</h2>
+
+    <div class="specials-container">
+
+        <div class="special-card">
+            <span class="badge">-10%</span>
+
+            <img src="images/jollof.jpg" alt="Jollof Rice">
+
+            <h3>Party Jollof Rice</h3>
+
+            <p>Served with chicken and fried plantain.</p>
+
+            <div class="price-row">
+                <span class="price">₦4,500</span>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="special-card">
+            <span class="badge popular">Popular</span>
+
+            <img src="images/egusi.jpg" alt="Egusi Soup">
+
+            <h3>Egusi & Pounded Yam</h3>
+
+            <p>Rich African soup with assorted meat.</p>
+
+            <div class="price-row">
+                <span class="price">₦5,000</span>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="special-card">
+            <span class="badge">-15%</span>
+
+            <img src="images/fish.jpg" alt="Grilled Fish">
+
+            <h3>Grilled Fish Deluxe</h3>
+
+            <p>Fresh grilled fish with vegetables.</p>
+
+            <div class="price-row">
+                <span class="price">₦6,500</span>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="special-card">
+            <span class="badge spicy">Spicy</span>
+
+            <img src="images/goatmeat.jpg" alt="Peppered Goat Meat">
+
+            <h3>Peppered Goat Meat</h3>
+
+            <p>Spicy goat meat with local seasoning.</p>
+
+            <div class="price-row">
+                <span class="price">₦5,500</span>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!--section class="popular-dishes">
 
     <h2>Popular Dishes</h2>
 
@@ -58,7 +159,7 @@
 
             <p>₦4,500</p>
 
-            <button>Add To Cart</button>
+           <button onclick="addToCart('Jollof Rice',4500)">add to cart</button>
 
         </div>
 
@@ -70,7 +171,8 @@
 
             <p>₦5,500</p>
 
-            <button>Add To Cart</button>
+            <button onclick="addToCart('Fried Rice & Chicken',5500)">Add To Cart</button>
+   
 
         </div>
 
@@ -82,68 +184,58 @@
 
             <p>₦6,000</p>
 
-            <button>Add To Cart</button>
+            <button onclick="addToCart('Ugba',6000)">Add To Cart</button>
 
         </div>
 
-         <div class="dish-card">
-
-            <img src="./images/Jollof 2.jpg.jpg" alt="Jollof Rice">
-
-            <h3>Jollof Rice</h3>
-
-            <p>₦4,500</p>
-
-            <button>Add To Cart</button>
-
-        </div>
-
-        <div class="dish-card">
-
-            <img src="./images/fried_rice_recipe.webp" alt="Fried Rice">
-
-            <h3>Fried Rice & Chicken</h3>
-
-            <p>₦5,500</p>
-
-            <button>Add To Cart</button>
-
-        </div>
-
-        <div class="dish-card">
-
-            <img src="./images/ugba.webp" alt="Ugba">
-
-            <h3>Ugba</h3>
-
-            <p>₦6,000</p>
-
-            <button>Add To Cart</button>
-
-        </div>
+        
 
     </div>
 
-</section>
+</section-->
 
     <section class="features">
 
-        <div class="feature-card">
-            <h3>Fast Delivery</h3>
-            <p>Get your meals delivered quickly and safely.</p>
-        </div>
+    <div class="feature-card">
+        <h3>🍽 Fresh & Tasty Meals</h3>
+        <p>Prepared daily using quality ingredients.</p>
+    </div>
 
-        <div class="feature-card">
-            <h3>Fresh Ingredients</h3>
-            <p>Prepared with quality ingredients every day.</p>
-        </div>
+    <div class="feature-card">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Meals delivered quickly to your doorstep.</p>
+    </div>
 
-        <div class="feature-card">
-            <h3>Cashback Rewards</h3>
-            <p>Earn ₦500 cashback for every ₦30,000 spent.</p>
-        </div>
+    <div class="feature-card">
+        <h3>🔒 Secure Payments</h3>
+        <p>Safe and protected transactions.</p>
+    </div>
 
-    </section>
+    <div class="feature-card">
+        <h3>💰 Loyalty Cashback</h3>
+        <p>Earn ₦500 for every ₦30,000 spent.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>🎧 24/7 Support</h3>
+        <p>Always available to assist customers.</p>
+    </div>
+
+</section>
 <script src="js/app.js"></script>
+
+<div id="cart-panel" class="cart-panel">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <h3>Total: ₦<span id="cart-total">0</span></h3>
+
+    <button class="checkout-btn">
+        Checkout
+    </button>
+
+</div>
 </body>
 </html>
