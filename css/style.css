@@ -60,53 +60,6 @@ body{
     text-decoration:none;
 }
 
-.hero{
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)
-    ),
-    url("../images/restaurant.jpeg");
-
-    background-size:cover;
-    background-position:center;
-
-    min-height:80vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    padding:20px;
-}
-
-.hero-content{
-    max-width:700px;
-    color:white;
-}
-
-.hero h1{
-    font-size:3rem;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:1.2rem;
-    margin-bottom:30px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:15px;
-    justify-content:center;
-}
-
-.secondary-btn{
-    background:#f4a261;
-}
 
 .features{
     display:grid;
@@ -278,7 +231,7 @@ body{
         rgba(0,0,0,0.55),
         rgba(0,0,0,0.55)
     ),
-    url("/images/restaurant.jpeg");
+    url("../images/restaurant.jpeg");
 
     background-size: cover;
     background-position: center;
