@@ -43,7 +43,6 @@ body{
 
     padding:15px 40px;
 
-    background:rgba(18,45,35,0.95);
 
     color:white;
 
@@ -52,6 +51,10 @@ body{
     z-index:1000;
 }
 
+.navbar{
+    background:rgba(15, 45, 35, 0.85);
+    backdrop-filter: blur(8px);
+}
 .logo{
     font-size:1.3rem;
     font-weight:bold;
@@ -66,6 +69,10 @@ body{
 .nav-links a{
     color:white;
     text-decoration:none;
+}
+.nav-links a:hover{
+    color:#c78b3c;
+    transition: 0.3s;
 }
 
 
@@ -274,7 +281,26 @@ body{
     gap:15px;
     flex-wrap:wrap;
 }
-
+.hero-buttons button{
+    padding: 14px 30px;
+    border:none;
+    border-radius:30px;
+    cursor: pointer;
+    font-weight:bold;
+}
+.hero-buttons button:first-child{
+    background:#c78b3c;
+    color:white;
+}
+.secondary-btn{
+    background:white;
+    color:#1f4d3a;
+    
+}
+.hero-buttons button:hover{
+    transform:translateY(-3px);
+    transition:0.3s;
+}
 .hero-logo{
     width:140px;
     margin-bottom:20px;
@@ -385,4 +411,10 @@ body{
 
 .spicy{
     background:#d9534f;
+}
+
+.tagline{
+    font-size:0.6rem;
+    color:#ddd;
+    margin-top:2px;
 }
